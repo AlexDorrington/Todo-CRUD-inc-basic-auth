@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Todo</title>
+</head>
+<body>
+    <div id="headerBar">
+        <h2>Todo List</h2>
+        <div>
+            <input placeholder="type to filter by title" type="text" id="filterInput">
+        </div>
+    </div>
+    <form method="/todo">
+        <input type="text" id="input1" name="title" placeholder="title">
+        <input type="text" id="input2" name="description" placeholder="description">
+        <input type="date" id="input3" name="date">
+        <button id="AddTodoBtn">Add</button>
+    </form>
+    <p class="sortByText">Sort by date</p>
+    <p class="sortByText" id="sortDateBtn"><span><i class="fa fa-arrow-circle-down"></i></span></p>
+    <div id="editContainer">
+        <h3>Please provide your new title and description</h3>
+        <div>
+            <input type="text" id="input4" placeholder="New title">
+            <input type="text" id="input5" placeholder="New description">
+            <button id="applyEditBtn">Apply changes</button>
+        </div>
+    </div>
+    <ul id="todoContainer">
+    </ul>
+
+<script src="./js/app.js"></script>
+</body>
+</html>

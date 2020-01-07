@@ -1,0 +1,100 @@
+body {
+    width: 80%;
+    border: 1px solid black;
+    margin: 10px auto;
+    position: relative;
+}
+#headerBar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#headerBar > div {
+    position: absolute;
+    top: 15%;
+    right: 5%
+}
+span:nth-child(1) > i {
+    font-size: 35px;
+    color: blue;
+    padding-left: 10px;
+    cursor: pointer;
+}
+form {
+    text-align: center;
+}
+.sortByText {
+    text-align: center;
+    padding-top: 25px;
+    margin: 0;
+}
+#sortDateBtn {
+    padding-top: 5px;
+}
+input {
+    height: 25px;
+}
+#todoContainer {
+    list-style-type: none;
+}
+#todoContainer > li {
+    margin: 1% auto;
+    padding: 1% 5%;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    border: 1px solid black;
+}
+.editBtn, .deleteBtn {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 10%;
+}
+.editBtn {
+    left: 0;
+}
+.deleteBtn {
+    right: 0;
+}
+.editBtn:hover {
+    background-color: green;
+    cursor: pointer;
+    color: #ffffff;
+}
+.deleteBtn:hover {
+    background-color: red;
+    cursor: pointer;
+    color: #ffffff;
+}
+.filterMatch {
+    background-color: greenyellow;
+}
+#editContainer {
+    text-align: center;
+    width: 50%;
+    border: 1px solid black;
+    background-color: red;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+}
+.formContainer {
+    width: 250px;
+    height: 150px;
+}
+.formContainer > form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
